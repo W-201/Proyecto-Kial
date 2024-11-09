@@ -1,12 +1,19 @@
-# Ignorar archivos de Visual Studio
+# Visual Studio cache and configuration
 .vs/
-.vscode/
-.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
-# Ignorar carpetas obj y bin
-**/obj/
-**/bin/
-
-# Ignorar archivos de caché
+# Archivos temporales de Visual Studio
 *.cache
+*.backup
+*.bak
+*.log
+*.vscode/
+DocumentLayout.json
+DocumentLayout.backup.json
 
+# Build results
+[Bb]in/
+[Oo]bj/
