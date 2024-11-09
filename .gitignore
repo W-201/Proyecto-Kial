@@ -1,1 +1,12 @@
+# Ignorar archivos de Visual Studio
 .vs/
+.vscode/
+.idea/
+
+# Ignorar carpetas obj y bin
+**/obj/
+**/bin/
+
+# Ignorar archivos de caché
+*.cache
+
