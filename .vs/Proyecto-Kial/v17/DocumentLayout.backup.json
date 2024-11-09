@@ -1,22 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\serga\\OneDrive - Universidad Privada del Norte\\Sergio Universidad\\VI Ciclo\\Moanso\\Py-Kial\\Proyecto-Kial\\",
+  "WorkspaceRootPath": "C:\\Users\\USER\\source\\repos\\Proyecto-Kial\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4220D0A8-4357-4B27-859D-CC796589C444}|CapaAccesoDatos\\CapaAccesoDatos.csproj|c:\\users\\serga\\onedrive - universidad privada del norte\\sergio universidad\\vi ciclo\\moanso\\py-kial\\proyecto-kial\\capaaccesodatos\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4220D0A8-4357-4B27-859D-CC796589C444}|CapaAccesoDatos\\CapaAccesoDatos.csproj|solutionrelative:capaaccesodatos\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D96BD03-D320-4C5C-AEE4-CDA525139831}|CapaLogica\\CapaLogica.csproj|c:\\users\\serga\\onedrive - universidad privada del norte\\sergio universidad\\vi ciclo\\moanso\\py-kial\\proyecto-kial\\capalogica\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D96BD03-D320-4C5C-AEE4-CDA525139831}|CapaLogica\\CapaLogica.csproj|solutionrelative:capalogica\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAF0F45F-5674-4978-BF39-1922F1C8DF84}|CapaEntidad\\CapaEntidad.csproj|c:\\users\\serga\\onedrive - universidad privada del norte\\sergio universidad\\vi ciclo\\moanso\\py-kial\\proyecto-kial\\capaentidad\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAF0F45F-5674-4978-BF39-1922F1C8DF84}|CapaEntidad\\CapaEntidad.csproj|solutionrelative:capaentidad\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{533AD45A-4335-4D96-BF4F-87E3D008097C}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\serga\\onedrive - universidad privada del norte\\sergio universidad\\vi ciclo\\moanso\\py-kial\\proyecto-kial\\capapresentacion\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{533AD45A-4335-4D96-BF4F-87E3D008097C}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{533AD45A-4335-4D96-BF4F-87E3D008097C}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\user\\source\\repos\\proyecto-kial\\capapresentacion\\principal\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{533AD45A-4335-4D96-BF4F-87E3D008097C}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\principal\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +14,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -39,53 +51,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\serga\\OneDrive - Universidad Privada del Norte\\Sergio Universidad\\VI Ciclo\\Moanso\\Py-Kial\\Proyecto-Kial\\CapaAccesoDatos\\Class1.cs",
-              "RelativeDocumentMoniker": "CapaAccesoDatos\\Class1.cs",
-              "ToolTip": "C:\\Users\\serga\\OneDrive - Universidad Privada del Norte\\Sergio Universidad\\VI Ciclo\\Moanso\\Py-Kial\\Proyecto-Kial\\CapaAccesoDatos\\Class1.cs",
-              "RelativeToolTip": "CapaAccesoDatos\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Login.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Proyecto-Kial\\CapaPresentacion\\Principal\\Login.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\Principal\\Login.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\Proyecto-Kial\\CapaPresentacion\\Principal\\Login.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CapaPresentacion\\Principal\\Login.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T04:10:59.383Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\serga\\OneDrive - Universidad Privada del Norte\\Sergio Universidad\\VI Ciclo\\Moanso\\Py-Kial\\Proyecto-Kial\\CapaLogica\\Class1.cs",
-              "RelativeDocumentMoniker": "CapaLogica\\Class1.cs",
-              "ToolTip": "C:\\Users\\serga\\OneDrive - Universidad Privada del Norte\\Sergio Universidad\\VI Ciclo\\Moanso\\Py-Kial\\Proyecto-Kial\\CapaLogica\\Class1.cs",
-              "RelativeToolTip": "CapaLogica\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T04:10:45.943Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\serga\\OneDrive - Universidad Privada del Norte\\Sergio Universidad\\VI Ciclo\\Moanso\\Py-Kial\\Proyecto-Kial\\CapaEntidad\\Class1.cs",
-              "RelativeDocumentMoniker": "CapaEntidad\\Class1.cs",
-              "ToolTip": "C:\\Users\\serga\\OneDrive - Universidad Privada del Norte\\Sergio Universidad\\VI Ciclo\\Moanso\\Py-Kial\\Proyecto-Kial\\CapaEntidad\\Class1.cs",
-              "RelativeToolTip": "CapaEntidad\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T04:10:29.472Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\serga\\OneDrive - Universidad Privada del Norte\\Sergio Universidad\\VI Ciclo\\Moanso\\Py-Kial\\Proyecto-Kial\\CapaPresentacion\\Form1.cs",
-              "RelativeDocumentMoniker": "CapaPresentacion\\Form1.cs",
-              "ToolTip": "C:\\Users\\serga\\OneDrive - Universidad Privada del Norte\\Sergio Universidad\\VI Ciclo\\Moanso\\Py-Kial\\Proyecto-Kial\\CapaPresentacion\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "CapaPresentacion\\Form1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T04:10:08.913Z",
+              "WhenOpened": "2024-11-09T05:16:24.207Z",
               "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             }
           ]
         }
