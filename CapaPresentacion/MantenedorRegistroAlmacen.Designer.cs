@@ -75,7 +75,7 @@
             this.label7.Location = new System.Drawing.Point(450, 23);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(529, 40);
+            this.label7.Size = new System.Drawing.Size(515, 39);
             this.label7.TabIndex = 55;
             this.label7.Text = "Registro de Ingreso de insumos";
             // 

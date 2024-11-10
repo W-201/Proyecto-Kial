@@ -65,6 +65,7 @@
             this.pcbxFondoMadera.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbxFondoMadera.TabIndex = 30;
             this.pcbxFondoMadera.TabStop = false;
+            this.pcbxFondoMadera.Click += new System.EventHandler(this.pcbxFondoMadera_Click);
             this.pcbxFondoMadera.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pcbxFondoMadera_MouseDown);
             // 
             // groupBox1
@@ -157,7 +158,7 @@
             this.label1.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(521, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 40);
+            this.label1.Size = new System.Drawing.Size(217, 39);
             this.label1.TabIndex = 34;
             this.label1.Text = "Proveedores";
             // 

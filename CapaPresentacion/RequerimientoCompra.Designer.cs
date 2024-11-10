@@ -71,6 +71,7 @@
             this.pcbxFondoMadera.Size = new System.Drawing.Size(1282, 668);
             this.pcbxFondoMadera.TabIndex = 1;
             this.pcbxFondoMadera.TabStop = false;
+            this.pcbxFondoMadera.Click += new System.EventHandler(this.pcbxFondoMadera_Click);
             this.pcbxFondoMadera.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pcbxFondoMadera_MouseDown);
             // 
             // groupBox1
@@ -249,7 +250,7 @@
             this.label1.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(368, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(499, 40);
+            this.label1.Size = new System.Drawing.Size(488, 39);
             this.label1.TabIndex = 58;
             this.label1.Text = "Requerimientos para compra";
             // 
