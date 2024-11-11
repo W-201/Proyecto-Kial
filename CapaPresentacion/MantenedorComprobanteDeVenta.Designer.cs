@@ -61,10 +61,10 @@
             // 
             this.pcbxFondoMadera.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pcbxFondoMadera.Image = ((System.Drawing.Image)(resources.GetObject("pcbxFondoMadera.Image")));
-            this.pcbxFondoMadera.Location = new System.Drawing.Point(1, -5);
-            this.pcbxFondoMadera.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.pcbxFondoMadera.Location = new System.Drawing.Point(-8, -4);
+            this.pcbxFondoMadera.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.pcbxFondoMadera.Name = "pcbxFondoMadera";
-            this.pcbxFondoMadera.Size = new System.Drawing.Size(1354, 680);
+            this.pcbxFondoMadera.Size = new System.Drawing.Size(1039, 489);
             this.pcbxFondoMadera.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbxFondoMadera.TabIndex = 32;
             this.pcbxFondoMadera.TabStop = false;
@@ -74,11 +74,13 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(539, 25);
+            this.label7.Location = new System.Drawing.Point(404, 20);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(331, 40);
+            this.label7.Size = new System.Drawing.Size(255, 31);
             this.label7.TabIndex = 33;
-            this.label7.Text = "Comprobante de venta:";
+            this.label7.Text = "Comprobante de venta";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // groupBox1
             // 
@@ -99,9 +101,11 @@
             this.groupBox1.Controls.Add(this.txtNombreClienteComprobante);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 94);
+            this.groupBox1.Location = new System.Drawing.Point(9, 76);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(701, 372);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(526, 302);
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ingresar datos";
@@ -109,9 +113,10 @@
             // cbxTipoComprobante
             // 
             this.cbxTipoComprobante.FormattingEnabled = true;
-            this.cbxTipoComprobante.Location = new System.Drawing.Point(207, 152);
+            this.cbxTipoComprobante.Location = new System.Drawing.Point(155, 124);
+            this.cbxTipoComprobante.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbxTipoComprobante.Name = "cbxTipoComprobante";
-            this.cbxTipoComprobante.Size = new System.Drawing.Size(271, 33);
+            this.cbxTipoComprobante.Size = new System.Drawing.Size(204, 28);
             this.cbxTipoComprobante.TabIndex = 16;
             // 
             // btnComprobanteCliente
@@ -120,9 +125,10 @@
             this.btnComprobanteCliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnComprobanteCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnComprobanteCliente.ForeColor = System.Drawing.Color.White;
-            this.btnComprobanteCliente.Location = new System.Drawing.Point(508, 276);
+            this.btnComprobanteCliente.Location = new System.Drawing.Point(381, 224);
+            this.btnComprobanteCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnComprobanteCliente.Name = "btnComprobanteCliente";
-            this.btnComprobanteCliente.Size = new System.Drawing.Size(169, 48);
+            this.btnComprobanteCliente.Size = new System.Drawing.Size(127, 39);
             this.btnComprobanteCliente.TabIndex = 15;
             this.btnComprobanteCliente.Text = "Registrar Cliente";
             this.btnComprobanteCliente.UseVisualStyleBackColor = false;
@@ -133,9 +139,10 @@
             this.btnAnularComprobante.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAnularComprobante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnularComprobante.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAnularComprobante.Location = new System.Drawing.Point(508, 167);
+            this.btnAnularComprobante.Location = new System.Drawing.Point(381, 136);
+            this.btnAnularComprobante.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAnularComprobante.Name = "btnAnularComprobante";
-            this.btnAnularComprobante.Size = new System.Drawing.Size(169, 48);
+            this.btnAnularComprobante.Size = new System.Drawing.Size(127, 39);
             this.btnAnularComprobante.TabIndex = 14;
             this.btnAnularComprobante.Text = "Anular";
             this.btnAnularComprobante.UseVisualStyleBackColor = false;
@@ -146,9 +153,10 @@
             this.btnRegistrarComprobante.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegistrarComprobante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrarComprobante.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRegistrarComprobante.Location = new System.Drawing.Point(508, 107);
+            this.btnRegistrarComprobante.Location = new System.Drawing.Point(381, 87);
+            this.btnRegistrarComprobante.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRegistrarComprobante.Name = "btnRegistrarComprobante";
-            this.btnRegistrarComprobante.Size = new System.Drawing.Size(169, 48);
+            this.btnRegistrarComprobante.Size = new System.Drawing.Size(127, 39);
             this.btnRegistrarComprobante.TabIndex = 13;
             this.btnRegistrarComprobante.Text = "Registrar";
             this.btnRegistrarComprobante.UseVisualStyleBackColor = false;
@@ -159,110 +167,123 @@
             this.btnNuevoComprobante.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevoComprobante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevoComprobante.ForeColor = System.Drawing.Color.White;
-            this.btnNuevoComprobante.Location = new System.Drawing.Point(508, 45);
+            this.btnNuevoComprobante.Location = new System.Drawing.Point(381, 37);
+            this.btnNuevoComprobante.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNuevoComprobante.Name = "btnNuevoComprobante";
-            this.btnNuevoComprobante.Size = new System.Drawing.Size(169, 48);
+            this.btnNuevoComprobante.Size = new System.Drawing.Size(127, 39);
             this.btnNuevoComprobante.TabIndex = 12;
             this.btnNuevoComprobante.Text = "Nuevo";
             this.btnNuevoComprobante.UseVisualStyleBackColor = false;
             // 
             // txtIdComprobante
             // 
-            this.txtIdComprobante.Location = new System.Drawing.Point(207, 45);
+            this.txtIdComprobante.Location = new System.Drawing.Point(155, 37);
+            this.txtIdComprobante.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtIdComprobante.Name = "txtIdComprobante";
-            this.txtIdComprobante.Size = new System.Drawing.Size(271, 30);
+            this.txtIdComprobante.Size = new System.Drawing.Size(204, 26);
             this.txtIdComprobante.TabIndex = 11;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 45);
+            this.label6.Location = new System.Drawing.Point(5, 37);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(184, 25);
+            this.label6.Size = new System.Drawing.Size(150, 20);
             this.label6.TabIndex = 10;
             this.label6.Text = "Id del comprobante:";
             // 
             // txtRucCliente
             // 
-            this.txtRucCliente.Location = new System.Drawing.Point(207, 261);
+            this.txtRucCliente.Location = new System.Drawing.Point(155, 212);
+            this.txtRucCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtRucCliente.Name = "txtRucCliente";
-            this.txtRucCliente.Size = new System.Drawing.Size(271, 30);
+            this.txtRucCliente.Size = new System.Drawing.Size(204, 26);
             this.txtRucCliente.TabIndex = 9;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 261);
+            this.label5.Location = new System.Drawing.Point(5, 212);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 25);
+            this.label5.Size = new System.Drawing.Size(48, 20);
             this.label5.TabIndex = 8;
             this.label5.Text = "RUC:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 324);
+            this.label4.Location = new System.Drawing.Point(5, 263);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 25);
+            this.label4.Size = new System.Drawing.Size(58, 20);
             this.label4.TabIndex = 7;
             this.label4.Text = "Fecha:";
             // 
             // dtpkComprobante
             // 
-            this.dtpkComprobante.Location = new System.Drawing.Point(207, 318);
+            this.dtpkComprobante.Location = new System.Drawing.Point(155, 258);
+            this.dtpkComprobante.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpkComprobante.Name = "dtpkComprobante";
-            this.dtpkComprobante.Size = new System.Drawing.Size(271, 30);
+            this.dtpkComprobante.Size = new System.Drawing.Size(204, 26);
             this.dtpkComprobante.TabIndex = 6;
             // 
             // txtDniCliente
             // 
-            this.txtDniCliente.Location = new System.Drawing.Point(207, 206);
+            this.txtDniCliente.Location = new System.Drawing.Point(155, 167);
+            this.txtDniCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDniCliente.Name = "txtDniCliente";
-            this.txtDniCliente.Size = new System.Drawing.Size(271, 30);
+            this.txtDniCliente.Size = new System.Drawing.Size(204, 26);
             this.txtDniCliente.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 206);
+            this.label3.Location = new System.Drawing.Point(5, 167);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 25);
+            this.label3.Size = new System.Drawing.Size(41, 20);
             this.label3.TabIndex = 4;
             this.label3.Text = "DNI:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 152);
+            this.label2.Location = new System.Drawing.Point(4, 124);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(197, 25);
+            this.label2.Size = new System.Drawing.Size(159, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tipo de comprobante";
             // 
             // txtNombreClienteComprobante
             // 
-            this.txtNombreClienteComprobante.Location = new System.Drawing.Point(207, 93);
+            this.txtNombreClienteComprobante.Location = new System.Drawing.Point(155, 76);
+            this.txtNombreClienteComprobante.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombreClienteComprobante.Name = "txtNombreClienteComprobante";
-            this.txtNombreClienteComprobante.Size = new System.Drawing.Size(271, 30);
+            this.txtNombreClienteComprobante.Size = new System.Drawing.Size(204, 26);
             this.txtNombreClienteComprobante.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 93);
+            this.label1.Location = new System.Drawing.Point(4, 76);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(179, 25);
+            this.label1.Size = new System.Drawing.Size(144, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre del cliente:";
             // 
             // dtgvComprobantesVentas
             // 
             this.dtgvComprobantesVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvComprobantesVentas.Location = new System.Drawing.Point(719, 94);
+            this.dtgvComprobantesVentas.Location = new System.Drawing.Point(539, 76);
+            this.dtgvComprobantesVentas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtgvComprobantesVentas.Name = "dtgvComprobantesVentas";
             this.dtgvComprobantesVentas.RowHeadersWidth = 51;
             this.dtgvComprobantesVentas.RowTemplate.Height = 24;
-            this.dtgvComprobantesVentas.Size = new System.Drawing.Size(620, 372);
+            this.dtgvComprobantesVentas.Size = new System.Drawing.Size(465, 302);
             this.dtgvComprobantesVentas.TabIndex = 35;
             // 
             // btnRegresarComprobante
@@ -270,42 +291,48 @@
             this.btnRegresarComprobante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(147)))), ((int)(((byte)(54)))));
             this.btnRegresarComprobante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresarComprobante.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRegresarComprobante.Location = new System.Drawing.Point(196, 525);
+            this.btnRegresarComprobante.Location = new System.Drawing.Point(9, 427);
+            this.btnRegresarComprobante.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRegresarComprobante.Name = "btnRegresarComprobante";
-            this.btnRegresarComprobante.Size = new System.Drawing.Size(124, 46);
+            this.btnRegresarComprobante.Size = new System.Drawing.Size(93, 37);
             this.btnRegresarComprobante.TabIndex = 47;
             this.btnRegresarComprobante.Text = "Regresar";
             this.btnRegresarComprobante.UseVisualStyleBackColor = false;
+            this.btnRegresarComprobante.Click += new System.EventHandler(this.btnRegresarComprobante_Click);
             // 
             // btnCancelarComprobante
             // 
             this.btnCancelarComprobante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.btnCancelarComprobante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarComprobante.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCancelarComprobante.Location = new System.Drawing.Point(1007, 525);
+            this.btnCancelarComprobante.Location = new System.Drawing.Point(755, 427);
+            this.btnCancelarComprobante.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCancelarComprobante.Name = "btnCancelarComprobante";
-            this.btnCancelarComprobante.Size = new System.Drawing.Size(124, 46);
+            this.btnCancelarComprobante.Size = new System.Drawing.Size(93, 37);
             this.btnCancelarComprobante.TabIndex = 48;
             this.btnCancelarComprobante.Text = "Cancelar";
             this.btnCancelarComprobante.UseVisualStyleBackColor = false;
+            this.btnCancelarComprobante.Click += new System.EventHandler(this.btnCancelarComprobante_Click);
             // 
             // btnListoComprobante
             // 
             this.btnListoComprobante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(147)))), ((int)(((byte)(54)))));
             this.btnListoComprobante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnListoComprobante.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnListoComprobante.Location = new System.Drawing.Point(1164, 525);
+            this.btnListoComprobante.Location = new System.Drawing.Point(873, 427);
+            this.btnListoComprobante.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnListoComprobante.Name = "btnListoComprobante";
-            this.btnListoComprobante.Size = new System.Drawing.Size(124, 46);
+            this.btnListoComprobante.Size = new System.Drawing.Size(93, 37);
             this.btnListoComprobante.TabIndex = 49;
             this.btnListoComprobante.Text = "Listo";
             this.btnListoComprobante.UseVisualStyleBackColor = false;
+            this.btnListoComprobante.Click += new System.EventHandler(this.btnListoComprobante_Click);
             // 
             // MantenedorComprobanteDeVenta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 679);
+            this.ClientSize = new System.Drawing.Size(1028, 482);
             this.Controls.Add(this.btnListoComprobante);
             this.Controls.Add(this.btnCancelarComprobante);
             this.Controls.Add(this.btnRegresarComprobante);
@@ -313,6 +340,8 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pcbxFondoMadera);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MantenedorComprobanteDeVenta";
             this.Text = "MantenedorComprobanteDeVenta";
             ((System.ComponentModel.ISupportInitialize)(this.pcbxFondoMadera)).EndInit();
