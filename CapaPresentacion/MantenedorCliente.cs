@@ -5,7 +5,6 @@ using System.Data.SqlClient;
 using System.Windows.Forms;
 using CapaLogica;
 using System.Data;
-using CapaAccesoDatos;
 
 
 namespace CapaPresentacion
@@ -13,12 +12,11 @@ namespace CapaPresentacion
     public partial class MantenedorCliente : Form
     {
         private bool cambiosRealizados = false; // Indicador de cambios en dtgvClientes
-        private SqlConnection conexion;
+
         public MantenedorCliente()
         {
             InitializeComponent();
             dtgvClientes.CellValueChanged += dtgvClientes_CellValueChanged; // Detectar cambios en celdas
-            conexion = Conexion.Instancia.Conectar(); // Usa el patrón Singleton para la conexión
             CargarClientes(); // Cargar datos al iniciar el formulario
         }
         // Método para cargar la lista de clientes en el DataGridView
@@ -72,21 +70,17 @@ namespace CapaPresentacion
         {
             foreach (Control control in this.Controls)
             {
-                // Limpiar TextBox
-                if (control is TextBox txtIdCliente)
+                if (control is TextBox txtBox)
                 {
-                    txtIdCliente.Clear();
+                    txtBox.Clear();
                 }
-    
-                // Desmarcar CheckBox
-                else if (control is CheckBox chkEstadoCliente)
+                else if (control is CheckBox checkBox)
                 {
-                    chkEstadoCliente.Checked = false;
+                    checkBox.Checked = false;
                 }
-                // Restablecer DateTimePicker al valor de hoy
-                else if (control is DateTimePicker dtpkFechaCliente)
+                else if (control is DateTimePicker datePicker)
                 {
-                    dtpkFechaCliente.Value = DateTime.Today;
+                    datePicker.Value = DateTime.Today;
                 }
             }
         }
@@ -98,16 +92,9 @@ namespace CapaPresentacion
 
         private void btnRegresarCliente_Click(object sender, EventArgs e)
         {
-            if (!cambiosRealizados)
-            {
                 // Si no hay cambios, regresa a la vista Main
                 AbrirFormularioUnico(typeof(Main));
                 this.Close(); // Cierra la vista actual
-            }
-            else
-            {
-                MessageBox.Show("No puedes regresar sin guardar o cancelar los cambios.");
-            }
         }
 
         private void btnCancelarCliente_Click(object sender, EventArgs e)
@@ -140,86 +127,64 @@ namespace CapaPresentacion
 
         private void btnAgregarCliente_Click(object sender, EventArgs e)
         {
-
             try
             {
-                // Convertir el valor de DNI y Número a int
-                if (!int.TryParse(txtDniCliente.Text, out int dni))
+                if (string.IsNullOrWhiteSpace(txtNombreCliente.Text))
                 {
-                    MessageBox.Show("El DNI debe ser un número válido.");
+                    MessageBox.Show("El nombre del cliente no puede estar vacío.");
                     return;
                 }
 
-                if (!int.TryParse(txtNumeroCliente.Text, out int numero))
+                if (!int.TryParse(txtDniCliente.Text, out int dni) || dni <= 0)
                 {
-                    MessageBox.Show("El Número debe ser un valor numérico.");
+                    MessageBox.Show("El DNI debe ser un número válido y positivo.");
+                    return;
+                }
+
+                if (!int.TryParse(txtNumeroCliente.Text, out int numero) || numero <= 0)
+                {
+                    MessageBox.Show("El número de contacto debe ser un valor numérico y positivo.");
                     return;
                 }
 
                 entCliente nuevoCliente = new entCliente
                 {
-                    razonSocial = txtNombreCliente.Text,
-                    dni = dni, // Se asegura de que el DNI está asignado como número
+                    razonSocial = txtNombreCliente.Text.Trim(),
+                    dni = dni,
                     numero = numero,
-                    correo = txtCorreoCliente.Text,
+                    correo = txtCorreoCliente.Text.Trim(),
                     fecRegCliente = dtpkFechaCliente.Value,
                     estCliente = chkEstadoCliente.Checked
                 };
 
-                using (SqlConnection conexion = Conexion.Instancia.Conectar())
-                {
-                    using (SqlCommand cmd = new SqlCommand("spInsertaCliente", conexion))
-                    {
-                        cmd.CommandType = CommandType.StoredProcedure;
-
-                        // Asegurarse de agregar todos los parámetros necesarios
-                        cmd.Parameters.AddWithValue("@razonSocial", nuevoCliente.razonSocial);
-                        cmd.Parameters.AddWithValue("@dni", nuevoCliente.dni); // Agregar el parámetro @dni
-                        cmd.Parameters.AddWithValue("@numero", nuevoCliente.numero);
-                        cmd.Parameters.AddWithValue("@correo", nuevoCliente.correo);
-                        cmd.Parameters.AddWithValue("@fecRegCliente", nuevoCliente.fecRegCliente);
-                        cmd.Parameters.AddWithValue("@estCliente", nuevoCliente.estCliente);
-
-                        conexion.Open();
-                        cmd.ExecuteNonQuery();
-                        MessageBox.Show("Cliente agregado correctamente.");
-                    }
-                }
-
-                CargarClientes(); // Recarga la lista de clientes
-                LimpiarCampos(); // Vaciar los campos después de agregar
+                logCliente.Instancia.InsertaCliente(nuevoCliente);
+                MessageBox.Show("Cliente agregado correctamente.");
+                CargarClientes();
+                LimpiarCampos();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error al agregar cliente: " + ex.Message);
             }
-
         }
 
         private void btnEditarCliente_Click(object sender, EventArgs e)
         {
             try
             {
-                if (string.IsNullOrWhiteSpace(txtIdCliente.Text))
-                {
-                    MessageBox.Show("Debe ingresar un ID Cliente válido para editar.");
-                    return;
-                }
-
                 if (!int.TryParse(txtIdCliente.Text, out int idCliente))
                 {
-                    MessageBox.Show("El ID Cliente debe ser un número válido.");
+                    MessageBox.Show("Debe ingresar un ID válido para editar.");
                     return;
                 }
 
-                // Convertir valores de DNI y Número
-                if (!int.TryParse(txtDniCliente.Text, out int dni))
+                if (!int.TryParse(txtDniCliente.Text, out int dni) || dni <= 0)
                 {
                     MessageBox.Show("El DNI debe ser un número válido.");
                     return;
                 }
 
-                if (!int.TryParse(txtNumeroCliente.Text, out int numero))
+                if (!int.TryParse(txtNumeroCliente.Text, out int numero) || numero <= 0)
                 {
                     MessageBox.Show("El Número debe ser un valor numérico.");
                     return;
@@ -228,17 +193,18 @@ namespace CapaPresentacion
                 entCliente clienteModificado = new entCliente
                 {
                     idCliente = idCliente,
-                    razonSocial = txtNombreCliente.Text,
+                    razonSocial = txtNombreCliente.Text.Trim(),
                     dni = dni,
                     numero = numero,
-                    correo = txtCorreoCliente.Text,
+                    correo = txtCorreoCliente.Text.Trim(),
                     fecRegCliente = dtpkFechaCliente.Value,
                     estCliente = chkEstadoCliente.Checked
                 };
 
                 logCliente.Instancia.EditaCliente(clienteModificado);
                 MessageBox.Show("Cliente modificado correctamente.");
-                CargarClientes(); // Recarga la lista de clientes
+                CargarClientes();
+                LimpiarCampos();
             }
             catch (Exception ex)
             {
@@ -251,10 +217,16 @@ namespace CapaPresentacion
         {
             try
             {
-                int idCliente = int.Parse(txtIdCliente.Text);
+                if (!int.TryParse(txtIdCliente.Text, out int idCliente))
+                {
+                    MessageBox.Show("Debe ingresar un ID válido para inhabilitar.");
+                    return;
+                }
+
                 logCliente.Instancia.DeshabilitarCliente(idCliente);
                 MessageBox.Show("Cliente inhabilitado correctamente.");
-                CargarClientes(); // Recarga la lista de clientes
+                CargarClientes();
+                LimpiarCampos();
             }
             catch (Exception ex)
             {

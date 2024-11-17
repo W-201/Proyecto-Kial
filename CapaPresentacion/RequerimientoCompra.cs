@@ -99,5 +99,15 @@ namespace CapaPresentacion
                 MessageBox.Show("No hay cambios para registrar.");
             }
         }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpkInsumo_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

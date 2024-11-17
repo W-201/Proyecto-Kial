@@ -26,10 +26,6 @@ namespace CapaLogica
 
         #region Métodos
 
-        /// <summary>
-        /// Lista todos los clientes activos en la base de datos.
-        /// </summary>
-        /// <returns>Lista de clientes activos</returns>
         public List<entCliente> ListarCliente()
         {
             try
@@ -41,10 +37,6 @@ namespace CapaLogica
                 throw new Exception("Error al listar clientes: " + ex.Message);
             }
         }
-
-        /// <summary>
-        /// Inserta un nuevo cliente en la base de datos.
-        /// </summary>
         /// <param name="cliente">Objeto de tipo entCliente que contiene los datos del cliente a insertar.</param>
         public void InsertaCliente(entCliente cliente)
         {

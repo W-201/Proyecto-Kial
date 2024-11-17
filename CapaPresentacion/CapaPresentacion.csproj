@@ -64,11 +64,11 @@
     <Compile Include="MantenedorCliente.Designer.cs">
       <DependentUpon>MantenedorCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="MantenedorComprobanteDeVenta.cs">
+    <Compile Include="Orden ComprobanteDeVenta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MantenedorComprobanteDeVenta.Designer.cs">
-      <DependentUpon>MantenedorComprobanteDeVenta.cs</DependentUpon>
+    <Compile Include="Orden ComprobanteDeVenta.Designer.cs">
+      <DependentUpon>Orden ComprobanteDeVenta.cs</DependentUpon>
     </Compile>
     <Compile Include="MantenedorProveedor.cs">
       <SubType>Form</SubType>
@@ -81,6 +81,12 @@
     </Compile>
     <Compile Include="MantenedorRegistroAlmacen.Designer.cs">
       <DependentUpon>MantenedorRegistroAlmacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Orden VentaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orden VentaProducto.Designer.cs">
+      <DependentUpon>Orden VentaProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="Principal\Login.cs">
       <SubType>Form</SubType>
@@ -111,14 +117,17 @@
     <EmbeddedResource Include="MantenedorCliente.resx">
       <DependentUpon>MantenedorCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MantenedorComprobanteDeVenta.resx">
-      <DependentUpon>MantenedorComprobanteDeVenta.cs</DependentUpon>
+    <EmbeddedResource Include="Orden ComprobanteDeVenta.resx">
+      <DependentUpon>Orden ComprobanteDeVenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorProveedor.resx">
       <DependentUpon>MantenedorProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorRegistroAlmacen.resx">
       <DependentUpon>MantenedorRegistroAlmacen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orden VentaProducto.resx">
+      <DependentUpon>Orden VentaProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -157,10 +166,6 @@
     <Folder Include="Insumos\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CapaAccesoDatos\CapaAccesoDatos.csproj">
-      <Project>{4220d0a8-4357-4b27-859d-cc796589c444}</Project>
-      <Name>CapaAccesoDatos</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CapaEntidad\CapaEntidad.csproj">
       <Project>{baf0f45f-5674-4978-bf39-1922f1c8df84}</Project>
       <Name>CapaEntidad</Name>

@@ -31,6 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MantenedorCliente));
             this.pcbxFondoMadera = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtNumeroCliente = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.chkEstadoCliente = new System.Windows.Forms.CheckBox();
             this.dtpkFechaCliente = new System.Windows.Forms.DateTimePicker();
             this.txtCorreoCliente = new System.Windows.Forms.TextBox();
             this.txtDniCliente = new System.Windows.Forms.TextBox();
@@ -49,9 +52,6 @@
             this.btnRegresarCliente = new System.Windows.Forms.Button();
             this.btnCancelarCliente = new System.Windows.Forms.Button();
             this.btnListoCliente = new System.Windows.Forms.Button();
-            this.chkEstadoCliente = new System.Windows.Forms.CheckBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtNumeroCliente = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pcbxFondoMadera)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvClientes)).BeginInit();
@@ -94,6 +94,33 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del cliente:";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // txtNumeroCliente
+            // 
+            this.txtNumeroCliente.Location = new System.Drawing.Point(184, 176);
+            this.txtNumeroCliente.Name = "txtNumeroCliente";
+            this.txtNumeroCliente.Size = new System.Drawing.Size(183, 26);
+            this.txtNumeroCliente.TabIndex = 58;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(108, 176);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(69, 20);
+            this.label7.TabIndex = 57;
+            this.label7.Text = "Número:";
+            // 
+            // chkEstadoCliente
+            // 
+            this.chkEstadoCliente.AutoSize = true;
+            this.chkEstadoCliente.Location = new System.Drawing.Point(139, 285);
+            this.chkEstadoCliente.Name = "chkEstadoCliente";
+            this.chkEstadoCliente.Size = new System.Drawing.Size(79, 24);
+            this.chkEstadoCliente.TabIndex = 56;
+            this.chkEstadoCliente.Text = "Estado";
+            this.chkEstadoCliente.UseVisualStyleBackColor = true;
             // 
             // dtpkFechaCliente
             // 
@@ -140,7 +167,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(21, 259);
+            this.label6.Location = new System.Drawing.Point(119, 254);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(58, 20);
@@ -150,7 +177,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 213);
+            this.label5.Location = new System.Drawing.Point(116, 216);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 20);
@@ -160,7 +187,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 140);
+            this.label4.Location = new System.Drawing.Point(143, 140);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(37, 20);
@@ -170,7 +197,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 94);
+            this.label3.Location = new System.Drawing.Point(36, 92);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(144, 20);
@@ -180,7 +207,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 50);
+            this.label2.Location = new System.Drawing.Point(100, 53);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 20);
@@ -295,33 +322,6 @@
             this.btnListoCliente.Text = "Listo";
             this.btnListoCliente.UseVisualStyleBackColor = false;
             this.btnListoCliente.Click += new System.EventHandler(this.btnListoCliente_Click);
-            // 
-            // chkEstadoCliente
-            // 
-            this.chkEstadoCliente.AutoSize = true;
-            this.chkEstadoCliente.Location = new System.Drawing.Point(139, 285);
-            this.chkEstadoCliente.Name = "chkEstadoCliente";
-            this.chkEstadoCliente.Size = new System.Drawing.Size(79, 24);
-            this.chkEstadoCliente.TabIndex = 56;
-            this.chkEstadoCliente.Text = "Estado";
-            this.chkEstadoCliente.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(21, 179);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 20);
-            this.label7.TabIndex = 57;
-            this.label7.Text = "Número:";
-            // 
-            // txtNumeroCliente
-            // 
-            this.txtNumeroCliente.Location = new System.Drawing.Point(184, 176);
-            this.txtNumeroCliente.Name = "txtNumeroCliente";
-            this.txtNumeroCliente.Size = new System.Drawing.Size(183, 26);
-            this.txtNumeroCliente.TabIndex = 58;
             // 
             // MantenedorCliente
             // 

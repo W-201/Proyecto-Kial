@@ -35,16 +35,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txtMontoCompra = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.cbzUnidadInsumo = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dtpkInsumo = new System.Windows.Forms.DateTimePicker();
             this.txtCantidadInsumo = new System.Windows.Forms.TextBox();
-            this.cbxTipoInsumo = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.txtNombreInsumo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dtgvInsumo = new System.Windows.Forms.DataGridView();
@@ -56,16 +50,24 @@
             this.btnRegresarRequrimientoCompra = new System.Windows.Forms.Button();
             this.btnListoRequerimientoCompra = new System.Windows.Forms.Button();
             this.btnCancelarRequerimientoCompra = new System.Windows.Forms.Button();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pcbxFondoMadera)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvInsumo)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pcbxFondoMadera
             // 
             this.pcbxFondoMadera.Image = ((System.Drawing.Image)(resources.GetObject("pcbxFondoMadera.Image")));
             this.pcbxFondoMadera.Location = new System.Drawing.Point(-1, -1);
-            this.pcbxFondoMadera.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pcbxFondoMadera.Margin = new System.Windows.Forms.Padding(2);
             this.pcbxFondoMadera.Name = "pcbxFondoMadera";
             this.pcbxFondoMadera.Size = new System.Drawing.Size(1048, 549);
             this.pcbxFondoMadera.TabIndex = 1;
@@ -79,22 +81,16 @@
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.txtMontoCompra);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.cbzUnidadInsumo);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.dtpkInsumo);
             this.groupBox1.Controls.Add(this.txtCantidadInsumo);
-            this.groupBox1.Controls.Add(this.cbxTipoInsumo);
-            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtNombreInsumo);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(10, 67);
+            this.groupBox1.Location = new System.Drawing.Point(6, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(413, 306);
+            this.groupBox1.Size = new System.Drawing.Size(368, 306);
             this.groupBox1.TabIndex = 52;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Insumos:";
@@ -102,7 +98,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(142, 33);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(192, 24);
             this.textBox1.TabIndex = 27;
@@ -110,17 +106,17 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(57, 33);
+            this.label9.Location = new System.Drawing.Point(114, 33);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(87, 19);
+            this.label9.Size = new System.Drawing.Size(26, 19);
             this.label9.TabIndex = 26;
-            this.label9.Text = "ID Compra:";
+            this.label9.Text = "ID:";
             // 
             // txtMontoCompra
             // 
-            this.txtMontoCompra.Location = new System.Drawing.Point(142, 264);
-            this.txtMontoCompra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMontoCompra.Location = new System.Drawing.Point(142, 148);
+            this.txtMontoCompra.Margin = new System.Windows.Forms.Padding(2);
             this.txtMontoCompra.Name = "txtMontoCompra";
             this.txtMontoCompra.Size = new System.Drawing.Size(192, 24);
             this.txtMontoCompra.TabIndex = 25;
@@ -128,37 +124,18 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(57, 264);
+            this.label8.Location = new System.Drawing.Point(80, 148);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(58, 19);
             this.label8.TabIndex = 24;
             this.label8.Text = "Monto:";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(142, 64);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(192, 27);
-            this.comboBox1.TabIndex = 23;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(57, 67);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(83, 19);
-            this.label7.TabIndex = 22;
-            this.label7.Text = "Proveedor:";
-            // 
             // cbzUnidadInsumo
             // 
             this.cbzUnidadInsumo.FormattingEnabled = true;
-            this.cbzUnidadInsumo.Location = new System.Drawing.Point(142, 198);
-            this.cbzUnidadInsumo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbzUnidadInsumo.Location = new System.Drawing.Point(142, 117);
+            this.cbzUnidadInsumo.Margin = new System.Windows.Forms.Padding(2);
             this.cbzUnidadInsumo.Name = "cbzUnidadInsumo";
             this.cbzUnidadInsumo.Size = new System.Drawing.Size(192, 27);
             this.cbzUnidadInsumo.TabIndex = 9;
@@ -166,72 +143,35 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(57, 201);
+            this.label2.Location = new System.Drawing.Point(76, 120);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 19);
             this.label2.TabIndex = 8;
             this.label2.Text = "Unidad:";
             // 
-            // dtpkInsumo
-            // 
-            this.dtpkInsumo.Location = new System.Drawing.Point(142, 232);
-            this.dtpkInsumo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dtpkInsumo.Name = "dtpkInsumo";
-            this.dtpkInsumo.Size = new System.Drawing.Size(192, 24);
-            this.dtpkInsumo.TabIndex = 7;
-            // 
             // txtCantidadInsumo
             // 
-            this.txtCantidadInsumo.Location = new System.Drawing.Point(142, 163);
-            this.txtCantidadInsumo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCantidadInsumo.Location = new System.Drawing.Point(142, 89);
+            this.txtCantidadInsumo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCantidadInsumo.Name = "txtCantidadInsumo";
             this.txtCantidadInsumo.Size = new System.Drawing.Size(192, 24);
             this.txtCantidadInsumo.TabIndex = 6;
             // 
-            // cbxTipoInsumo
-            // 
-            this.cbxTipoInsumo.FormattingEnabled = true;
-            this.cbxTipoInsumo.Location = new System.Drawing.Point(142, 124);
-            this.cbxTipoInsumo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cbxTipoInsumo.Name = "cbxTipoInsumo";
-            this.cbxTipoInsumo.Size = new System.Drawing.Size(192, 27);
-            this.cbxTipoInsumo.TabIndex = 5;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(57, 237);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 19);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Fecha:";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(57, 166);
+            this.label5.Location = new System.Drawing.Point(57, 92);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 19);
             this.label5.TabIndex = 2;
             this.label5.Text = "Cantidad:";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(57, 127);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 19);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Tipo:";
-            // 
             // txtNombreInsumo
             // 
-            this.txtNombreInsumo.Location = new System.Drawing.Point(142, 93);
-            this.txtNombreInsumo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombreInsumo.Location = new System.Drawing.Point(142, 61);
+            this.txtNombreInsumo.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreInsumo.Name = "txtNombreInsumo";
             this.txtNombreInsumo.Size = new System.Drawing.Size(192, 24);
             this.txtNombreInsumo.TabIndex = 4;
@@ -239,7 +179,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(57, 95);
+            this.label3.Location = new System.Drawing.Point(70, 64);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 19);
@@ -249,12 +189,12 @@
             // dtgvInsumo
             // 
             this.dtgvInsumo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvInsumo.Location = new System.Drawing.Point(456, 67);
-            this.dtgvInsumo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtgvInsumo.Location = new System.Drawing.Point(379, 6);
+            this.dtgvInsumo.Margin = new System.Windows.Forms.Padding(2);
             this.dtgvInsumo.Name = "dtgvInsumo";
             this.dtgvInsumo.RowHeadersWidth = 51;
             this.dtgvInsumo.RowTemplate.Height = 24;
-            this.dtgvInsumo.Size = new System.Drawing.Size(569, 306);
+            this.dtgvInsumo.Size = new System.Drawing.Size(589, 306);
             this.dtgvInsumo.TabIndex = 57;
             // 
             // label1
@@ -276,7 +216,7 @@
             this.btnModificarInsumo.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarInsumo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnModificarInsumo.Location = new System.Drawing.Point(228, 419);
-            this.btnModificarInsumo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnModificarInsumo.Margin = new System.Windows.Forms.Padding(2);
             this.btnModificarInsumo.Name = "btnModificarInsumo";
             this.btnModificarInsumo.Size = new System.Drawing.Size(93, 37);
             this.btnModificarInsumo.TabIndex = 62;
@@ -290,7 +230,7 @@
             this.btnAgregarInsumo.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarInsumo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnAgregarInsumo.Location = new System.Drawing.Point(122, 419);
-            this.btnAgregarInsumo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAgregarInsumo.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregarInsumo.Name = "btnAgregarInsumo";
             this.btnAgregarInsumo.Size = new System.Drawing.Size(93, 37);
             this.btnAgregarInsumo.TabIndex = 61;
@@ -304,7 +244,7 @@
             this.btnEditarInsumo.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditarInsumo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEditarInsumo.Location = new System.Drawing.Point(335, 419);
-            this.btnEditarInsumo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEditarInsumo.Margin = new System.Windows.Forms.Padding(2);
             this.btnEditarInsumo.Name = "btnEditarInsumo";
             this.btnEditarInsumo.Size = new System.Drawing.Size(93, 37);
             this.btnEditarInsumo.TabIndex = 60;
@@ -318,7 +258,7 @@
             this.btnNuevoInsumo.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevoInsumo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnNuevoInsumo.Location = new System.Drawing.Point(15, 419);
-            this.btnNuevoInsumo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNuevoInsumo.Margin = new System.Windows.Forms.Padding(2);
             this.btnNuevoInsumo.Name = "btnNuevoInsumo";
             this.btnNuevoInsumo.Size = new System.Drawing.Size(93, 37);
             this.btnNuevoInsumo.TabIndex = 59;
@@ -332,7 +272,7 @@
             this.btnRegresarRequrimientoCompra.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresarRequrimientoCompra.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnRegresarRequrimientoCompra.Location = new System.Drawing.Point(11, 495);
-            this.btnRegresarRequrimientoCompra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegresarRequrimientoCompra.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegresarRequrimientoCompra.Name = "btnRegresarRequrimientoCompra";
             this.btnRegresarRequrimientoCompra.Size = new System.Drawing.Size(93, 37);
             this.btnRegresarRequrimientoCompra.TabIndex = 65;
@@ -347,7 +287,7 @@
             this.btnListoRequerimientoCompra.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListoRequerimientoCompra.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnListoRequerimientoCompra.Location = new System.Drawing.Point(932, 495);
-            this.btnListoRequerimientoCompra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnListoRequerimientoCompra.Margin = new System.Windows.Forms.Padding(2);
             this.btnListoRequerimientoCompra.Name = "btnListoRequerimientoCompra";
             this.btnListoRequerimientoCompra.Size = new System.Drawing.Size(93, 37);
             this.btnListoRequerimientoCompra.TabIndex = 64;
@@ -362,7 +302,7 @@
             this.btnCancelarRequerimientoCompra.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelarRequerimientoCompra.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnCancelarRequerimientoCompra.Location = new System.Drawing.Point(835, 496);
-            this.btnCancelarRequerimientoCompra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelarRequerimientoCompra.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelarRequerimientoCompra.Name = "btnCancelarRequerimientoCompra";
             this.btnCancelarRequerimientoCompra.Size = new System.Drawing.Size(93, 37);
             this.btnCancelarRequerimientoCompra.TabIndex = 63;
@@ -370,11 +310,66 @@
             this.btnCancelarRequerimientoCompra.UseVisualStyleBackColor = false;
             this.btnCancelarRequerimientoCompra.Click += new System.EventHandler(this.btnCancelarRequerimientoCompra_Click);
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(15, 65);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(995, 349);
+            this.tabControl1.TabIndex = 66;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.Controls.Add(this.dtgvInsumo);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(987, 323);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Insumos";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.comboBox1);
+            this.tabPage2.Controls.Add(this.label7);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(987, 323);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Compra";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(440, 151);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(192, 21);
+            this.comboBox1.TabIndex = 25;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(355, 154);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(59, 13);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "Proveedor:";
+            // 
             // RequerimientoCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1047, 544);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.btnRegresarRequrimientoCompra);
             this.Controls.Add(this.btnListoRequerimientoCompra);
             this.Controls.Add(this.btnCancelarRequerimientoCompra);
@@ -383,17 +378,19 @@
             this.Controls.Add(this.btnEditarInsumo);
             this.Controls.Add(this.btnNuevoInsumo);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dtgvInsumo);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pcbxFondoMadera);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RequerimientoCompra";
             this.Text = "RequerimientoCompra";
             ((System.ComponentModel.ISupportInitialize)(this.pcbxFondoMadera)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvInsumo)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -407,16 +404,10 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtMontoCompra;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cbzUnidadInsumo;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dtpkInsumo;
         private System.Windows.Forms.TextBox txtCantidadInsumo;
-        private System.Windows.Forms.ComboBox cbxTipoInsumo;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtNombreInsumo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dtgvInsumo;
@@ -428,5 +419,10 @@
         private System.Windows.Forms.Button btnRegresarRequrimientoCompra;
         private System.Windows.Forms.Button btnListoRequerimientoCompra;
         private System.Windows.Forms.Button btnCancelarRequerimientoCompra;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label7;
     }
 }
