@@ -35,7 +35,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txtMontoCompra = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.cbzUnidadInsumo = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCantidadInsumo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -55,6 +54,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pcbxFondoMadera)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvInsumo)).BeginInit();
@@ -77,11 +77,11 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.txtMontoCompra);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.cbzUnidadInsumo);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtCantidadInsumo);
             this.groupBox1.Controls.Add(this.label5);
@@ -130,15 +130,6 @@
             this.label8.Size = new System.Drawing.Size(58, 19);
             this.label8.TabIndex = 24;
             this.label8.Text = "Monto:";
-            // 
-            // cbzUnidadInsumo
-            // 
-            this.cbzUnidadInsumo.FormattingEnabled = true;
-            this.cbzUnidadInsumo.Location = new System.Drawing.Point(142, 117);
-            this.cbzUnidadInsumo.Margin = new System.Windows.Forms.Padding(2);
-            this.cbzUnidadInsumo.Name = "cbzUnidadInsumo";
-            this.cbzUnidadInsumo.Size = new System.Drawing.Size(192, 27);
-            this.cbzUnidadInsumo.TabIndex = 9;
             // 
             // label2
             // 
@@ -364,6 +355,13 @@
             this.label7.TabIndex = 24;
             this.label7.Text = "Proveedor:";
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(142, 119);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(192, 24);
+            this.textBox2.TabIndex = 28;
+            // 
             // RequerimientoCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -404,7 +402,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtMontoCompra;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox cbzUnidadInsumo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCantidadInsumo;
         private System.Windows.Forms.Label label5;
@@ -424,5 +421,6 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

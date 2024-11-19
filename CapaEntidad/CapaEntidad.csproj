@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="entCliente.cs" />
     <Compile Include="entComprobante.cs" />
+    <Compile Include="entOrden.cs" />
+    <Compile Include="entProducto.cs" />
     <Compile Include="entProveedor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

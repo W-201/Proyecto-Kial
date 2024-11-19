@@ -61,16 +61,10 @@ namespace CapaPresentacion
 
         private void btnRegresarRequrimientoCompra_Click(object sender, EventArgs e)
         {
-            if (!cambiosRealizados)
-            {
                 // Si no hay cambios, regresa a la vista Main
                 AbrirFormularioUnico(typeof(Main));
                 this.Close(); // Cierra la vista actual
-            }
-            else
-            {
-                MessageBox.Show("No puedes regresar sin guardar o cancelar los cambios.");
-            }
+            
         }
 
         private void btnCancelarRequerimientoCompra_Click(object sender, EventArgs e)

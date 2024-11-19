@@ -32,6 +32,7 @@
             this.pcbxFondoMadera = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnBuscarVenta = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.txtDireccionComprobante = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -56,7 +57,6 @@
             this.btnRegresarComprobante = new System.Windows.Forms.Button();
             this.btnCancelarComprobante = new System.Windows.Forms.Button();
             this.btnListoComprobante = new System.Windows.Forms.Button();
-            this.btnBuscarVenta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pcbxFondoMadera)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvComprobante)).BeginInit();
@@ -69,7 +69,7 @@
             this.pcbxFondoMadera.Location = new System.Drawing.Point(-8, -4);
             this.pcbxFondoMadera.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.pcbxFondoMadera.Name = "pcbxFondoMadera";
-            this.pcbxFondoMadera.Size = new System.Drawing.Size(1397, 501);
+            this.pcbxFondoMadera.Size = new System.Drawing.Size(1397, 530);
             this.pcbxFondoMadera.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbxFondoMadera.TabIndex = 32;
             this.pcbxFondoMadera.TabStop = false;
@@ -119,6 +119,20 @@
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ingresar datos";
+            // 
+            // btnBuscarVenta
+            // 
+            this.btnBuscarVenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(147)))), ((int)(((byte)(54)))));
+            this.btnBuscarVenta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscarVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarVenta.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarVenta.Location = new System.Drawing.Point(464, 117);
+            this.btnBuscarVenta.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBuscarVenta.Name = "btnBuscarVenta";
+            this.btnBuscarVenta.Size = new System.Drawing.Size(127, 39);
+            this.btnBuscarVenta.TabIndex = 21;
+            this.btnBuscarVenta.Text = "Buscar";
+            this.btnBuscarVenta.UseVisualStyleBackColor = false;
             // 
             // checkBox1
             // 
@@ -371,25 +385,11 @@
             this.btnListoComprobante.UseVisualStyleBackColor = false;
             this.btnListoComprobante.Click += new System.EventHandler(this.btnListoComprobante_Click);
             // 
-            // btnBuscarVenta
-            // 
-            this.btnBuscarVenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(147)))), ((int)(((byte)(54)))));
-            this.btnBuscarVenta.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBuscarVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarVenta.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarVenta.Location = new System.Drawing.Point(464, 117);
-            this.btnBuscarVenta.Margin = new System.Windows.Forms.Padding(2);
-            this.btnBuscarVenta.Name = "btnBuscarVenta";
-            this.btnBuscarVenta.Size = new System.Drawing.Size(127, 39);
-            this.btnBuscarVenta.TabIndex = 21;
-            this.btnBuscarVenta.Text = "Buscar";
-            this.btnBuscarVenta.UseVisualStyleBackColor = false;
-            // 
             // MantenedorComprobanteDeVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1381, 488);
+            this.ClientSize = new System.Drawing.Size(1381, 496);
             this.Controls.Add(this.btnListoComprobante);
             this.Controls.Add(this.btnCancelarComprobante);
             this.Controls.Add(this.btnRegresarComprobante);
